@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments - exclude all except llama_factory_env
+venv/
+ENV/
+env/
+qwenvl_env/
+
+# Include llama_factory_env virtual environment
+!LLaMA-Factory/llama_factory_env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Models - exclude base models but include Lora weights
+models/
+!models/*.safetensors
+!models/*/*.safetensors
+
+# Output - exclude training outputs
+output/
+
+# Other model files to exclude
+*.pth
+*.bin
+*.gguf
+
+# Data and database
+data/*.db
+data/*.sqlite
+*.db
+*.sqlite
+
+# Logs
+*.log
+logs/
+log/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LLaMA-Factory - include specific directories
+!LLaMA-Factory/llama_factory_env/
+!LLaMA-Factory/output/disease_train/
+LLaMA-Factory/*
+!LLaMA-Factory/llama_factory_env/
+!LLaMA-Factory/output/disease_train/
+
+# CDDMBench dataset
+CDDMBench 农作物病害诊断多模态基准/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

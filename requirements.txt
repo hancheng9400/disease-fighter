@@ -1,0 +1,41 @@
+# Qwen2-VL 训练环境依赖
+torch>=2.3.0
+torchvision>=0.18.0
+torchaudio>=2.3.0
+
+# 模型下载与加载
+modelscope>=1.15.0
+transformers>=4.40.0
+accelerate>=0.30.0
+
+# 多模态处理
+qwen-vl-utils>=0.0.4
+pillow>=10.0.0
+opencv-python>=4.9.0
+
+# 训练框架
+deepspeed>=0.14.0
+peft>=0.11.0
+trl>=0.8.0
+bitsandbytes>=0.43.0
+
+# 数据处理
+datasets>=2.19.0
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+
+# 日志与可视化
+wandb>=0.17.0
+tensorboard>=2.16.0
+tqdm>=4.66.0
+
+# 工具库
+requests>=2.31.0
+huggingface-hub>=0.23.0
+einops>=0.8.0
+sentencepiece>=0.2.0
+protobuf>=4.25.0
+
+# 可选：Flash Attention (P40不支持，注释掉)
+# flash-attn>=2.5.0

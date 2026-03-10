@@ -1,0 +1,19 @@
+:8888 {
+    # 反向代理 MaxKB 服务 - 使用 handle 保留路径
+    handle /chat/* {
+        reverse_proxy http://172.30.23.12:8080
+    }
+    
+    handle /api/* {
+        reverse_proxy http://172.30.23.12:8080
+    }
+    
+    handle /ui/* {
+        reverse_proxy http://172.30.23.12:8080
+    }
+    
+    # 兜底规则：反向代理到 Gradio
+    handle {
+        reverse_proxy http://127.0.0.1:7860
+    }
+}
