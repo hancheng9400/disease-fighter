@@ -46,9 +46,8 @@
 │   ├── database.py            # 数据库管理
 │   ├── logger.py              # 日志记录
 │   └── stats.py               # 统计分析
-├── LLaMA-Factory/             # 模型训练框架
 ├── models/                    # 模型文件 (需自行下载)
-└── output/                    # 训练输出 (已训练)
+└── output/                    # 训练输出 (可邮箱联系获取)
 ```
 
 ## 快速开始
